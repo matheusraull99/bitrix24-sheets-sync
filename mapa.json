@@ -1,0 +1,11 @@
+{
+  "entidade": "crm.deal",
+  "chave_crm": "ID",
+  "coluna_chave": "ID",
+  "campos": {
+    "TITLE": "Negocio",
+    "OPPORTUNITY": "Valor",
+    "STAGE_ID": "Etapa",
+    "COMMENTS": "Observacoes"
+  }
+}

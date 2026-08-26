@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitrix24-sheets-sync"
+version = "1.0.0"
+description = "Sincronizacao bidirecional entre o CRM do Bitrix24 e o Google Sheets com merge de tres vias"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["requests>=2.31", "google-api-python-client>=2.100", "google-auth>=2.30"]
+
+[project.scripts]
+sync-sheets = "sheets_sync.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
