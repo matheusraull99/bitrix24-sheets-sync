@@ -1,6 +1,6 @@
 """Sincronizacao bidirecional entre o CRM do Bitrix24 e o Google Sheets."""
 
-from .merge import Acao, Decisao, Origem, comparar_registro, nova_base, normalizar, planejar
+from .merge import Acao, Decisao, Origem, comparar_registro, normalizar, nova_base, planejar
 from .sync import Mapeamento, Planilha, Sincronizador, abrir_planilha
 
 __version__ = "1.0.0"

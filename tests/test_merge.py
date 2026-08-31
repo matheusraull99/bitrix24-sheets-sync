@@ -6,8 +6,8 @@ from sheets_sync.merge import (
     Acao,
     Origem,
     comparar_registro,
-    nova_base,
     normalizar,
+    nova_base,
     planejar,
 )
 
